@@ -9,6 +9,8 @@ import org.springframework.web.client.RestTemplate;
 @ComponentScan("com.example.rest.API_template_demo")
 public class MyConfig {
 
+    String sessionId;
+
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
